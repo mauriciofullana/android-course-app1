@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFormActivity"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Login Form"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/vd10"
+        app:layout_constraintRight_toLeftOf="@+id/vd90"
+        app:layout_constraintTop_toBottomOf="@+id/hg10" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintLeft_toRightOf="@+id/vd10"
+        app:layout_constraintRight_toLeftOf="@+id/vd90"
+        app:layout_constraintTop_toBottomOf="@+id/txt_label" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toRightOf="@+id/vd10"
+        app:layout_constraintRight_toLeftOf="@+id/vd90"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+
+    <TextView
+        android:id="@+id/txt_no_account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:text="No account yet?"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@+id/vd10"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+    <TextView
+        android:id="@+id/txt_label_sign_up"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Sign up"
+        android:textColor="#64B5F6"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/txt_no_account"
+        app:layout_constraintLeft_toRightOf="@id/txt_no_account"
+        app:layout_constraintRight_toLeftOf="@+id/vd90"
+        app:layout_constraintTop_toTopOf="@id/txt_no_account" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:text="Login"
+        android:textColor="#FFF"
+        android:background="#64B5F6"
+        android:layout_marginVertical="32dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_no_account"
+        app:layout_constraintLeft_toLeftOf="@id/vd10"
+        app:layout_constraintRight_toRightOf="@id/vd90"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hg10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hg90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vd10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vd90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
